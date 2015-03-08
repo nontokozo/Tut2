@@ -22,13 +22,13 @@ public:
 
 	void print(); // print fraction function header
 
-	int add();
+	void add(Fraction, Fraction);
 
-	int subtract();
+	void subtract(Fraction,Fraction);
 
-	int multiply();
+	void multiply(Fraction,Fraction);
 
-	int divide();
+	void divide(Fraction,Fraction);
 
 	
 
@@ -68,6 +68,10 @@ Fraction::~Fraction()
 {
 }
 
+void Fraction::add(Fraction lhs, Fraction rhs)
+{
+
+}
 void Fraction::reduce() // reduce fraction function
 {
 	int gcf; // greatest common factor variable
@@ -160,7 +164,7 @@ const Fraction operator / (const Fraction& lhs, const Fraction& rhs) // / overlo
 
 
 
-
+//****************MAIN FUNCTION**************************************//
 
 int _tmain(int argc, _TCHAR* argv[])
 {
