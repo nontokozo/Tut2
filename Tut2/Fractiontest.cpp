@@ -66,6 +66,17 @@ int _tmain(int argc, _TCHAR* argv[])
 	result.print();
 	cout << endl;
 
+
+	// test overloaded greater than operator
+	cout << ((frac1 >> frac2) ? " >> " : " <= ");
+	frac2.print();
+	cout << " according to the overloaded >> operator\n";
+
+	// test overloaded less than operator
+	cout << ((frac1 << frac2) ? " << " : " >= ");
+	frac2.print();
+	cout << " according to the overloaded << operator\n";
+
 	system("Pause");
 	return 0;
 }

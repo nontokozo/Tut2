@@ -30,6 +30,11 @@ public:
 
 	~Fraction();
 
+
+	// relational operators
+	bool operator>>(const Fraction &) const;
+	bool operator<<(const Fraction &) const;
+
 	friend const Fraction operator + (const Fraction& lhs, const Fraction& rhs); // + operator overloaded function header
 	friend const Fraction operator - (const Fraction& lhs, const Fraction& rhs); // - operator overloaded function header
 	friend const Fraction operator * (const Fraction& lhs, const Fraction& rhs); // * operator overloaded function header

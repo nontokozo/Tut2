@@ -116,3 +116,21 @@ const Fraction operator / (const Fraction& lhs, const Fraction& rhs) // / overlo
 	temp.reduce(); // reduce results
 	return temp; // return results
 }
+
+
+// overloaded >> operator
+bool Fraction::operator>>(const Fraction &gr) const
+{
+	return gr << *this;
+} // end function operator>>
+
+
+
+// overloaded << operator
+bool Fraction::operator<<(const Fraction &lr) const
+{
+	double thisVal = static_cast< double >(numerator) / denominator;
+	double lrVal = static_cast< double >(lr.numerator) / lr.denominator;
+	return thisVal < lrVal;
+} // end function operator<<
+
